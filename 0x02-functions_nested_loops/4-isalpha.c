@@ -1,14 +1,12 @@
 #include "main.h"
 
-/** 
-*is alpha 
-**/
-
+/**
+ * _isalpha - check if character is lower case
+ * @c: character to be checked
+ *
+ * Return: 1 if lowercase 0 otherwhise
+ */
 int _isalpha(int c)
 {
-        if(isalpha(c))
-                return (1);
-	    else
-	 	        return (0);
+	return (('a' <= c && c <= 'z') || ('A' <= c && c <= 'Z') ? 1 : 0);
 }
-
